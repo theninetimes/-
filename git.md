@@ -97,3 +97,18 @@ git remote add origin https://github.com/Wang-Phil/test.git#关联远程仓库�
 git push -u origin main#设置远程仓库的main分支为本地仓库main分支的上游分支，在提交时不需指定
 ```
 
+远程仓库操作命令
+
+```bash
+git remote#查看关联的远程库
+git remote add <仓库名> <url>#添加远程仓库
+git remote remove <仓库名>#删除远程库
+git push -u <远程仓库名> <本地分支名>#将本地分支和远程仓库的分支进行关联
+git clone <url>#从远程仓库下载代码
+
+git push #向远程仓库推送代码
+git fetch #从远程仓库拉取最新代码，但是不会自动合并，需要调用merge合并代码
+git pull #从远程仓库拉去最新代码，并且自动合并
+```
+
+**注**推送代码之前必须获取最新的代码
