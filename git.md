@@ -141,3 +141,19 @@ git push <仓库名> -delete 标签名
 git switch -c test <标签名>
 ```
 
+**gitignore**
+
+默认情况下git会跟踪所有的文件，但是类似node_modules的文件不希望被管理，所以我们需要配置gitignore来忽略类似的文件
+
+.gitignore
+
+```bash
+node_modules#忽略node_modules文件夹
+*.log#忽略所有的log文件
+```
+
+**github的静态网页**
+
+我们可以将静态网页放到github上，GitHub会为我们的网页分配域名，这样可以供所有人访问
+
+注：静态网页的分支必须为：gh-pages，如果希望通过xxx.github.io访问，则要将GitHub上的仓库名命名为xxx.github.io
